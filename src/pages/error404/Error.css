@@ -1,0 +1,53 @@
+.error-content {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px white;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-content h1 {
+  font-family: "Roboto";
+  margin-bottom: 20px;
+  font-size: 6rem;
+  letter-spacing: 3px;
+  background-color: transparent;
+}
+
+.error-content img {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.error-content p {
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  background-color: transparent;
+  margin: 0.8rem;
+  padding: 5px;
+  width: 50%;
+}
+
+.error-content p a {
+  background-color: transparent;
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  .error-content h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .error-content img {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,127 @@
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  transition: 0.5s ease;
+  border: none;
+  box-shadow: var(--boxEffectShadow);
+  gap: 2rem;
+}
+
+nav .logo {
+  color: var(--logoColor);
+  text-shadow: var(--textEffectShadowWhite);
+  font-size: var(--logoSize);
+  font-weight: 800;
+  font-family: "dancing Script";
+  letter-spacing: var(--letterSpace);
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+nav .logo span {
+  font-size: var(--logoSize);
+  font-weight: 700;
+  color: var(--logoSpanColor);
+  font-family: "dancing Script";
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--gapNavUl);
+}
+
+nav a {
+  color: var(--whiteColor);
+  font-family: "Righteous";
+  text-shadow: var(--textEffectShadowWhite);
+  text-decoration: none;
+  font-size: var(--navMenuSize);
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: var(--gapNavLi);
+}
+
+nav a.active {
+  color: var(--navActiveLinkColor);
+  font-size: var(--hoverActiveLinkSize);
+}
+
+nav a:hover {
+  color: var(--navActiveLinkColor);
+}
+
+nav .icons {
+  color: var(--iconColor);
+  font-size: var(--iconSize);
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav button {
+  padding: 1.6rem;
+  font-size: var(--iconMenuCloseSize);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  nav .logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: var(--logoSize);
+  }
+
+  nav.stretched {
+    height: 37vh;
+    background: transparent;
+  }
+
+  nav.stretched ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gapNavUl);
+    opacity: 1;
+  }
+
+  nav button {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 20px;
+  }
+
+  nav .icons {
+    visibility: visible;
+    opacity: 1;
+    font-size: var(--remOne);
+  }
+}

@@ -1,0 +1,92 @@
+.alert {
+  border: 2px solid green;
+  border-radius: 10px;
+  background-color: rgba(172, 255, 47, 0.224);
+  display: flex;
+  width: 600px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.alert .alert-icon-success {
+  font-size: 1rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+  color: #00ff00;
+}
+
+.alert p {
+  font-family: Righteous;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  color: #00ff00;
+}
+
+.alert span {
+  display: flex;
+  font-family: Righteous;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+  color: #00ff00;
+}
+
+.alert button {
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.269);
+  width: 7%;
+  height: 70%;
+}
+
+@media (max-width: 768px) {
+  .alert {
+    width: 380px;
+    height: 50px;
+  }
+
+  .alert .alert-icon-success {
+    font-size: 0.8rem;
+  }
+
+  .alert p {
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+
+  .alert span {
+    font-size: 0.8rem;
+  }
+
+  .alert button {
+    width: 15%;
+    height: 30px;
+  }
+}
+
+@media (max-width: 410px) {
+  .alert {
+    width: 340px;
+    height: 50px;
+  }
+
+  .alert .alert-icon-success {
+    font-size: 0.4rem;
+    padding: 1px;
+  }
+
+  .alert p {
+    font-size: 0.6rem;
+    font-weight: 200;
+  }
+
+  .alert span {
+    font-size: 0.8rem;
+  }
+
+  .alert button {
+    width: 20%;
+    height: 30px;
+  }
+}

@@ -1,0 +1,154 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.about-section h3 {
+  font-size: var(--subTitleSize);
+  color: var(--whiteColor);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.about-section p {
+  color: yellow;
+  font-family: Righteous;
+  font-weight: 500;
+}
+
+.download-cv-btn {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto auto;
+  margin-bottom: 30px;
+}
+.pers-data {
+  display: flex;
+  padding: 0 10px 30px;
+  gap: 10rem;
+}
+
+.pers-data .icons {
+  color: var(--iconColor);
+  margin-right: -40px;
+}
+
+.personal-data img {
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 20px;
+  width: 150px;
+  height: 190px;
+}
+
+.about-section .item {
+  display: flex;
+  margin: 10px;
+  gap: 4rem;
+}
+
+.about-section .item .subList-item {
+  color: var(--whiteColor);
+  font-size: var(--subListSize);
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.about-section .item .subList-item li {
+  margin: 8px;
+  letter-spacing: 1px;
+}
+
+.Knowledge-data .lang,
+.interes,
+.extra {
+  margin-bottom: 2rem;
+}
+.Knowledge-data .list li,
+.extra li {
+  list-style: none;
+  font-size: var(--subListSize);
+  margin-bottom: 20px;
+}
+
+.Knowledge-data .lang {
+  display: flex;
+  gap: 5rem;
+  color: var(--whiteColor);
+}
+
+.Knowledge-data .interes {
+  display: flex;
+  gap: 3rem;
+  color: var(--whiteColor);
+}
+
+.Knowledge-data .extra {
+  display: flex;
+  gap: 6rem;
+  color: var(--whiteColor);
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 50px 50px;
+  }
+
+  .download-cv-btn {
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    margin-bottom: 10px;
+  }
+
+  .pers-data {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .pers-data .list .item {
+    flex-direction: row;
+    gap: 2.6rem;
+  }
+
+  .personal-data img {
+    width: 200px;
+    height: 260px;
+  }
+
+  .about-section .item {
+    flex-direction: column;
+    margin: 10px;
+    gap: 1rem;
+  }
+
+  .Knowledge-data .lang,
+  .interes,
+  .extra {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .Knowledge-data li {
+    padding: 0 30px;
+  }
+
+  .Knowledge-data .lang {
+    gap: 1rem;
+  }
+
+  .Knowledge-data .interes {
+    gap: 1rem;
+  }
+  .Knowledge-data .interes li {
+    margin-bottom: 10px;
+  }
+
+  .Knowledge-data .extra {
+    gap: 1rem;
+  }
+}

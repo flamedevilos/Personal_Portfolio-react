@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Righteous;
+}
+
+:root {
+  --blackColor: #000000;
+  --whiteColor: #ffffff;
+
+  --letterSpace: 0.3rem;
+  --gapNavUl: 1.4rem;
+  --gapNavLi: 0.5rem;
+  --gapTitleParag: 0.5rem;
+  --gapList: 2rem;
+
+  --bgBlack: #0000009f;
+  --bgDarkBlue: #00055e;
+
+  --navActiveLinkColor: #3838ff;
+  --hoverColor: #00055e;
+
+  --scrollBgColor: #ffffff;
+  --scrollBarColor: #00055e;
+  --scrollBarHover: #3838ff;
+
+  --hoverActiveLinkSize: 1.6rem;
+  --logoSize: 3rem;
+  --navMenuSize: 1.3rem;
+  --titleSize: 4rem;
+  --subTitleSize: 2rem;
+  --UndersubTitleSize: 1.6rem;
+  --paragSize: 1rem;
+  --linkSize: 0.8rem;
+  --iconSize: 1rem;
+  --iconMenuCloseSize: 1.6rem;
+  --subListSize: 0.8rem;
+
+  --logoColor: #3838ff;
+  --logoSpanColor: #dc143c;
+  --iconColor: #00ffff;
+  --titleColor: #f5f5f5;
+  --subTitleColor: #0bfd13;
+  --paragColor: #ffffff;
+  --linkColor: #fff700;
+
+  --borderColor: rgba(205, 205, 205, 0.624);
+
+  --buttonBgColor: rgba(36, 36, 255, 0.543);
+  --buttonHoverColor: rgba(0, 0, 0, 0.625);
+
+  --cardHoverBgColor: rgba(36, 36, 255, 0.624);
+  --cardTitleSize: 1rem;
+  --cardTitleSpan: 0.8rem;
+  --cardParagSize: 0.8rem;
+  --cardParagLink: 0.5rem;
+
+  --footerFontSize: 1rem;
+
+  --boxEffectShadow: 0 5px 20px #ffffff;
+  --textEffectShadowWhite: 0 5px 10px #ffffff;
+  --textEffectShadowAqua: 0 5px 10px rgb(0, 255, 255);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: url(./img/home_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent, var(--bgDarkBlue));
+  bottom: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  background: var(--scrollBgColor);
+  width: 11px;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollBarColor);
+  width: 100%;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollBarHover);
+}
+
+section {
+  position: relative;
+  padding: 40px 100px;
+  transition: 0.5s ease;
+  transition-property: padding;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgBlack);
+}
+
+section h1 {
+  color: var(--titleColor);
+  font-size: var(--titleSize);
+  letter-spacing: 1px;
+  font-family: righteous;
+  font-weight: 600;
+}
+
+section h1 span {
+  font-size: var(--subTitleSize);
+  color: var(--subTitleColor);
+}
+
+section h2 {
+  color: var(--whiteColor);
+  font-size: var(--subTitleSize);
+  letter-spacing: 1px;
+  font-family: righteous;
+  font-weight: 600;
+  text-shadow: var(--textEffectShadowAqua);
+}
+
+section h2 span {
+  font-size: var(--UndersubTitleSize);
+  color: var(--subTitleColor);
+}
+
+section p {
+  font-size: var(--paragSize);
+  font-family: Ysabeau;
+  font-weight: 700;
+  color: var(--paragColor);
+  letter-spacing: 1px;
+  width: 80%;
+  padding: 10px;
+}
+
+section p a {
+  font-size: var(--linkSize);
+  color: var(--linkColor);
+  text-decoration: none;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+section button {
+  color: var(--whiteColor);
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--buttonBgColor);
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+section .down-icon {
+  background: transparent;
+}
+
+section button a {
+  font-family: righteous;
+  color: var(--whiteColor);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: transparent;
+}
+
+section button:hover {
+  background-color: var(--buttonHoverColor);
+  box-shadow: var(--boxEffectShadow);
+}
+
+footer {
+  color: var(--whiteColor);
+  position: relative;
+  top: 30px;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+footer p,
+a,
+span {
+  color: var(--whiteColor);
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: var(--footerFontSize);
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 20px 30px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section h1 span {
+    font-size: 1.2rem;
+  }
+  section h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  section p {
+    font-size: var(--remOne);
+    width: 100%;
+  }
+
+  section button {
+    width: 210px;
+    height: 40px;
+  }
+  section button a {
+    font-size: var(--remOne);
+    font-weight: 400;
+  }
+
+  footer {
+    padding: 0 10px;
+  }
+
+  footer p {
+    font-size: var(--remN8);
+  }
+}

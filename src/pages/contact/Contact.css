@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.contact-content .parag {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+form p {
+  color: yellow;
+  font-size: 0.8rem;
+}
+
+form .item {
+  width: 75%;
+  height: 50px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form label {
+  color: var(--iconColor);
+  font-size: var(--iconSize);
+  margin-right: 10px;
+}
+
+form .item input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.451);
+  padding: 10px;
+  color: var(--whiteColor);
+  font-size: 1.4rem;
+  font-family: "Ysabeau";
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+form input::placeholder,
+.msg textarea::placeholder {
+  color: var(--whiteColor);
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+form .input-error {
+  color: red;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+form .msg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+form .msg textarea {
+  width: 75%;
+  height: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.451);
+  font-size: 1.4rem;
+  font-family: "Ysabeau";
+  color: var(--whiteColor);
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+form .check-box {
+  padding: 10px;
+  text-align: center;
+  width: 80%;
+  height: 60px;
+}
+
+form .check-box span {
+  font-family: Ysabeau;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.animated-btn:disabled {
+  background: transparent;
+  color: var(--whiteColor);
+  cursor: not-allowed;
+}
+
+.spinner {
+  font-size: 25px;
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section h1 {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 535px) {
+  .contact-section .contact-content .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .item {
+    width: 75%;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form label {
+    color: var(--iconColor);
+    font-size: var(--iconSize);
+    margin-right: 10px;
+  }
+
+  form .item input {
+    border: none;
+    width: 100%;
+    height: 80%;
+  }
+
+  form input::placeholder,
+  .msg textarea::placeholder {
+    color: var(--whiteColor);
+    font-size: 0.8rem;
+  }
+
+  form .check-box {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 300px) {
+  .contact-section {
+    padding: 20px 20px 40px;
+  }
+
+  .contact-section .contact-content .info span {
+    font-size: 12px;
+  }
+  .contact-section h1 {
+    font-size: 2.6rem;
+  }
+
+  .contact-section p {
+    font-size: 0.8rem;
+  }
+
+  form {
+    height: 100%;
+  }
+
+  .contact-section form .note {
+    font-size: 10px;
+  }
+  .contact-section form input {
+    height: 70%;
+    width: 200px;
+    font-size: 0.8rem;
+  }
+
+  .contact-section form input::placeholder,
+  .contact-section form textarea::placeholder {
+    font-size: 0.6rem;
+  }
+
+  .contact-section form .check-box {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .contact-section form .check-box label span {
+    font-size: 0.6rem;
+    margin-bottom: 20px;
+  }
+
+  form button {
+    margin-top: 30px;
+    width: 60%;
+    height: 35px;
+  }
+}
